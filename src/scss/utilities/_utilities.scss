@@ -1,0 +1,13 @@
+.util-visually-hidden {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+
+  &:focus {
+    inset: 0 auto auto 0;
+    clip: auto;
+    clip-path: none;
+  }
+}
